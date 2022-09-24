@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="pos_config_view_form" model="ir.ui.view">
+        <field name="name">pos.config.view.form.inherit</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <h2 name="order" position="before">
+                <h2 name="credit_limit">Credit Limit</h2>
+                <div class="row mt16 o_settings_container">
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label for="credit_limit"/>
+                            <div class="text-muted">
+                                Credit Limit
+                            </div>
+                            <div class="content-group mt16">
+                                <field name="credit_limit"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </h2>
+        </field>
+    </record>
+</odoo>

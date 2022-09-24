@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template id="template" xml:space="preserve">
+    <t t-name="ClientLine" t-inherit="point_of_sale.ClientLine" t-inherit-mode="extension" owl="1">
+        <xpath expr="//tr/td" position="before">
+            <td>
+                <t t-esc="props.partner.ref || ''" />
+            </td>
+        </xpath>
+        <xpath expr="//tr/td[hasclass('client-line-email')]" position="after">
+            <td>
+                <t t-esc="props.partner.debit || '0'" />
+            </td>
+            <td>
+                <t t-esc="props.partner.credit || '0'" />
+            </td>
+        </xpath>
+        <xpath expr="//tr" position="attributes">
+            <attribute name="t-attf-class">client-line {{highlight}} {{crdeitLimit}}</attribute>
+        </xpath>
+    </t>
+</template>

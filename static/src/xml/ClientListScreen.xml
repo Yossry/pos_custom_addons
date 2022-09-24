@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template id="template" xml:space="preserve">
+    <t t-name="ClientListScreen" t-inherit="point_of_sale.ClientListScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//table[hasclass('client-list')]/thead/tr/th" position="before">
+            <th>Ref</th>
+        </xpath>
+        <xpath expr="//table[hasclass('client-list')]/thead/tr/th[hasclass('client-line-email')]" position="after">
+            <th>Debit</th>
+            <th>Credit</th>
+        </xpath>
+    </t>
+</template>
