@@ -7,7 +7,6 @@ odoo.define('pos_custom_addons.ClientLine', function (require) {
     const NewClientLine = ClientLine =>
         class extends ClientLine {
             get crdeitLimit() {
-                console.log("\n\n --------------- this: ", this)
                 return this.props.partner.credit >= this.env.pos.config.credit_limit ? 'red-credit-limit' : '';
             }
         }

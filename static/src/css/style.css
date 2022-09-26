@@ -2,3 +2,15 @@
     background-color: rgb(208, 93, 93) !important;
     color: white !important;
 }
+
+.pos .product .qty-tag {
+    position: absolute;
+    top: 22px;
+    right: 2px;
+    vertical-align: top;
+    color: white;
+    line-height: 13px;
+    background: #4dad55;
+    padding: 2px 5px;
+    border-radius: 2px;
+}

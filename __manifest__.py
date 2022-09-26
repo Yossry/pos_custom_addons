@@ -16,9 +16,8 @@
     ],
     "assets": {
         "point_of_sale.assets": [
-            "/pos_custom_addons/static/src/js/models.js",
-            "/pos_custom_addons/static/src/js/ClientLine.js",
-            "/pos_custom_addons/static/src/css/style.css",
+            "/pos_custom_addons/static/src/js/*",
+            "/pos_custom_addons/static/src/css/*",
         ],
         'web.assets_qweb': [
             '/pos_custom_addons/static/src/xml/*',

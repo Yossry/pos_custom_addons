@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template id="template" xml:space="preserve">
+    <t t-name="ProductItem" t-inherit="point_of_sale.ProductItem" t-inherit-mode="extension" owl="1">
+        <span class="price-tag" position="after">
+            <span class="qty-tag">
+                <t t-esc="props.product.qty_available" />
+            </span>
+        </span>
+    </t>
+</template>
